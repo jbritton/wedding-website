@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <link href="http://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600italic,600,700italic,700" rel="stylesheet" type="text/css" />
@@ -13,9 +14,9 @@
     <script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 </head>
-<body data-spy="scroll">
+<body data-spy="scroll" data-target="#nav-links">
 
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="navbar-header">
             <button type="button"
                     class="navbar-toggle"
@@ -27,9 +28,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><span class="logo">Jeff & Molly</span></a>
+            <a class="navbar-brand" href="#">
+                <span class="logo">Jeff & Molly</span>
+            </a>
         </div>
-        <div class="navbar-collapse collapse">
+        <div id="nav-links" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li role="presentation" class="active"><a href="#">The Couple</a></li>
                 <li role="presentation"><a href="#the-couple">Events</a></li>
@@ -42,10 +45,27 @@
         </div>
     </nav>
 
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hero-placeholder">
+                    <div class="hero-text">
+                        <span class="date lead">February 5th, 2016</span><br/>
+                        <span class="location lead">Mont Tremblant, Quebec, Canada</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <section id="the-couple" class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h1>The Couple</h1>
+                <h1>
+                    The Couple
+                    <span class="subtitle">About Jeff & Molly</span>
+                </h1>
+
             </div>
             <div class="col-md-4">
                 <h2>How They Met</h2>
@@ -71,21 +91,27 @@
     <section id="events" class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="section-header">Events</h1>
+                <h1 class="section-header">
+                    Events
+                    <span class="subtitle">The Wedding Events</span>
+                </h1>
             </div>
             <div class="col-md-4">
+                <img src="img/bonfire.jpeg" class="img-thumbnail img-responsive" />
                 <h2>Rehearsal Dinner/Bon Fire</h2>
                 <p>
                     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
                 </p>
             </div>
             <div class="col-md-4">
+                <img src="img/bonfire.jpeg" class="img-thumbnail img-responsive" />
                 <h2>Wedding Ceremony</h2>
                 <p>
                     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
                 </p>
             </div>
             <div class="col-md-4">
+                <img src="img/bonfire.jpeg" class="img-thumbnail img-responsive" />
                 <h2>Wedding Reception</h2>
                 <p>
                     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
@@ -97,7 +123,10 @@
     <section id="accomodations" class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="section-header">Accomodations</h1>
+                <h1 class="section-header">
+                    Accomodations
+                    <span class="subtitle">Where to Stay</span>
+                </h1>
             </div>
             <div class="col-md-6">
                 <h2>Le Grande Lodge</h2>
@@ -117,22 +146,32 @@
     <section id="getting-there" class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="section-header">Getting There</h1>
+                <h1 class="section-header">
+                    Getting There
+                    <span class="subtitle">How to get to Mont Tremblant</span>
+                </h1>
             </div>
-            <div class="col-md-4">
-                <h2>Airports</h2>
-                <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                </p>
+            <div class="col-md-6">
+                <h2>Flying There</h2>
+
+                <p></p>
+
+                <h4>Airports</h4>
+                <ul>
+                    <li>Mont Tremblant International Airport</li>
+                    <li>Montréal-Pierre Elliott Trudeau International Airport</li>
+                    <li>Montréal Saint-Hubert Longueuil Airport</li>
+                </ul>
+
+                <h4>Ground Transportation</h4>
+                <ul>
+                    <li>Rent a car</li>
+                    <li>Shuttle service</li>
+                </ul>
             </div>
-            <div class="col-md-4">
-                <h2>Ground Transportation</h2>
-                <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                </p>
-            </div>
-            <div class="col-md-4">
-                <h2>Driving</h2>
+            <div class="col-md-6">
+                <h2>Driving There</h2>
+
                 <p>
                     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
                 </p>
@@ -143,7 +182,34 @@
     <section id="activities" class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="section-header">Activities</h1>
+                <h1 class="section-header">
+                    Activities
+                    <span class="subtitle">Things to do during your stay</span>
+                </h1>
+                <div class="col-md-3">
+                    <h2>Skiing</h2>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h2>Tremblant Village</h2>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h2>Restaurants</h2>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h2>Casino</h2>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -151,7 +217,18 @@
     <section id="registry" class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="section-header">Registry</h1>
+                <h1 class="section-header">
+                    Registry
+                    <span class="subtitle">Where we are registered</span>
+                </h1>
+            </div>
+            <div class="col-md-6">
+                <h2>Fund Our Honeymoon</h2>
+                <p></p>
+            </div>
+            <div class="col-md-6">
+                <h2>Williams Sonoma</h2>
+                <p></p>
             </div>
         </div>
     </section>
@@ -159,47 +236,31 @@
     <section id="contact" class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="section-header">Contact Us</h1>
+                <h1 class="section-header">
+                    Contact
+                    <span class="subtitle">Have more questions?  Get in touch</span>
+                </h1>
+            </div>
+            <div class="col-md-4">
+                <h2>Address</h2>
+                <address>
+                    729 W. 34th Street<br/>
+                    Baltimore, MD, 21211
+                </address>
+            </div>
+            <div class="col-md-4">
+                <h2>Email</h2>
+                <span><strong>Jeff:</strong>  britton.jeff [at] gmail.com</span><br/>
+                <span><strong>Molly:</strong>  mclaughlin.molly [at] gmail.com</span>
+            </div>
+            <div class="col-md-4">
+                <h2>Phone</h2>
+                <span><strong>Jeff:</strong> 410.279.6433</span><br/>
+                <span><strong>Molly:</strong> 443.745.7449</span>
             </div>
         </div>
     </section>
 
-
-    <!--
-    <section class="container hero-container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="hero-placeholder">
-                    <div class="hero-text">
-                        <span class="date lead">February 5th, 2016</span><br/>
-                        <span class="location lead">Mont Tremblant, Quebec, Canada</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container content-container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Welcome</h1>
-                <p>
-                    Welcome to our wedding website.  We will be getting married in Mont Tremblant, Quebec, Canada on February 5th, 2016.  We are excited
-                    to celebrate the start of our marriage with the friends and family whom we love so dearly.  We hope to make it as easy as possible for
-                    people to attend the celebration but we understand that it might be difficult for some.  We hope you can make it.  Please check back for periodically as more
-                    details emerge.
-                </p>
-                <h1>Our Story</h1>
-                <p>
-                    Molly and Jeff first met back in September 2010 as two twenty-somethings out enjoying a Saturday night in Baltimore
-                    City.  To this day, the details of their first encounter are a bit hazy but they had a lot in common and Jeff had the good sense to ask Molly for her phone
-                    number.  The following week, they went on their first date to a local sushi bar.  What followed was a wonderful relationship
-                    that grew stronger with every passing day.  On, December 6th, 2014, Jeff proposed to Molly in New York City.  Molly said 'Yes'.
-                </p>
-            </div>
-        </div>
-    </section>
-    -->
 
 </body>
 </html>
