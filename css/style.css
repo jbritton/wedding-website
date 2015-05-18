@@ -1,13 +1,16 @@
+body {
+    position: relative;
+}
 
 .logo {
-    font-family: 'Great Vibes', cursive;
     color: #ee6593;
+    font-family: 'Great Vibes', cursive;
 }
 
 h1 {
+    color: #605154;
     font-family: 'Open Sans', sans-serif;
     font-size: 36px;
-    color: #605154;
     font-weight: 700;
     text-transform: uppercase;
     margin: 0px 0 15px;
@@ -21,6 +24,11 @@ h2 {
     line-height: 24px;
     margin: 0px 0 15px;
     text-transform: uppercase;
+}
+
+
+header {
+    margin-top: 60px;
 }
 
 section {
