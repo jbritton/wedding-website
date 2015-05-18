@@ -1,18 +1,39 @@
 
-h1.section-header {
+.logo {
+    font-family: 'Great Vibes', cursive;
+    color: #ee6593;
+}
+
+h1 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 28px;
+    font-size: 36px;
     color: #605154;
     font-weight: 700;
     text-transform: uppercase;
     margin: 0px 0 15px;
 }
 
-.logo {
-    font-family: 'Great Vibes', cursive;
+h2 {
     color: #ee6593;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    margin: 0px 0 15px;
+    text-transform: uppercase;
 }
 
+section {
+    padding: 30px 0px;
+}
+
+section:nth-child(even) {
+    background: #fff;
+}
+
+section:nth-child(odd) {
+    background: #f9f8f8;
+}
 
 
 
