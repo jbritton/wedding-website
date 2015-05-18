@@ -16,6 +16,15 @@ h1 {
     margin: 0px 0 15px;
 }
 
+h1 span.subtitle {
+    font-size: 19px;
+    line-height: 27px;
+    letter-spacing: 3px;
+    display: block;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
 h2 {
     color: #ee6593;
     font-family: 'Open Sans', sans-serif;
@@ -26,13 +35,19 @@ h2 {
     text-transform: uppercase;
 }
 
+.navbar a {
+    font-family: "Times New Roman", Times, serif;
+    letter-spacing: 3px;
+    font-style: normal;
+}
+
 
 header {
     margin-top: 60px;
 }
 
 section {
-    padding: 30px 0px;
+    padding: 20px 0px 50px 0px;
 }
 
 section:nth-child(even) {
@@ -42,7 +57,6 @@ section:nth-child(even) {
 section:nth-child(odd) {
     background: #f9f8f8;
 }
-
 
 
 
