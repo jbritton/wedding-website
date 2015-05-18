@@ -1,0 +1,53 @@
+
+h1.section-header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    color: #605154;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0px 0 15px;
+}
+
+.logo {
+    font-family: 'Great Vibes', cursive;
+    color: #ee6593;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* old */
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+
+.hero-container {
+    margin-top: 10px;
+}
+
+.hero-placeholder {
+    height: 250px;
+    border: 1px solid #ccc;
+    background: #eee;
+}
+
+.hero-text {
+    margin-left: 20px;
+    margin-top: 170px;
+}
+
+.slider-placeholder {
+    height: 250px;
+    border: 1px solid #ccc;
+    background: #eee;
+}
